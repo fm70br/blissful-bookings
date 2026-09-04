@@ -58,8 +58,8 @@ function Impressao() {
 
       <header className="border-b border-border pb-5">
         <h1 className="text-3xl">Sessões de massagem</h1>
-        <p className="mt-1 capitalize text-muted-foreground">
-          {formatarData(data)} · {nomeDiaSemana(data)}
+        <p className="mt-1 text-muted-foreground">
+          {formatarData(data)} · <span className="capitalize">{nomeDiaSemana(data)}</span>
         </p>
         <p className="mt-2 text-sm">
           Departamento: <strong className="font-medium">{departamento.nome_dep}</strong> · Massagista:{" "}

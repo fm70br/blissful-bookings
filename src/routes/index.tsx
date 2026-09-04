@@ -191,8 +191,9 @@ function FormularioSessoes({
         <div className="flex items-start justify-between gap-4">
           <div>
             <h2 className="text-2xl">{formatarData(data)}</h2>
-            <p className="text-sm capitalize text-muted-foreground">
-              {nomeDiaSemana(data)} · {naSemana}/2 sessões usadas nesta semana
+            <p className="text-sm text-muted-foreground">
+              <span className="capitalize">{nomeDiaSemana(data)}</span> · {naSemana}/2 sessões usadas nesta
+              semana
             </p>
           </div>
           <div className="flex items-center gap-2">
